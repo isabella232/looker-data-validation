@@ -81,7 +81,6 @@ end
 def url_encoded_query(query_id, use_calcite)
   old_query_body = get_query_body(query_id)
 
-  puts 'Running test for query id: ' + query_id
   logger.info('Explore url is: ' + old_query_body[:share_url])
 
   begin
@@ -179,6 +178,7 @@ end
 
 def run_queries(query_id, dashboard_id)
   logger.info("-------------- Starting test for Dashboard: #{dashboard_id} Query id: #{query_id} --------------")
+  puts "-------------- Starting test for Dashboard: #{dashboard_id} Query id: #{query_id} --------------"
   url_encoded_query(query_id, false)
   url_encoded_query(query_id, true)
 end

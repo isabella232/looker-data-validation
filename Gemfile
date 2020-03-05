@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.4.4'
 gem 'looker-sdk', '0.0.6'
 gem 'parallel_split_test'
 gem 'rack', '2.0.7'
