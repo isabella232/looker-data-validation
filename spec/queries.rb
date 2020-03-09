@@ -33,6 +33,11 @@ def get_query_ids_from_dashboard(dashboard_id)
       end
     end
   end
+  
+  if all_query_ids.nil? || all_query_ids.empty?
+    raise "Error, dashboard ID: #{dashboard_id} is invalid or has no queries"
+  end
+
   return all_query_ids
 end
 
